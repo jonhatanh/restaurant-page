@@ -1,24 +1,37 @@
-import {create, addClass, addChilds } from './helper'
+import * as help from './helper';
+import foodsData from './foods.json';
 
-export default function() {
-    const home = create('div');
-    home.id = 'home';
-    
-    const title = create('h2');
-    title.textContent = 'Home';
-    
-    const homeContent1 = create('div');
-    const title1 = create('h4');
-    const p1 = create('p');
-    title1.textContent = 'Title 1'
-    p1.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque sint quibusdam sed aperiam.
-    Distinctio omnis eligendi non harum et excepturi molestiae necessitatibus voluptate cumque
-    cupiditate, porro, magni, consequatur id!`;
-    addChilds(homeContent1, title1, p1);
-    
-    
-    
-    
-    addChilds(home, title, homeContent1);
-    return home;
+export default function () {
+    const menu = help.create('div');
+    menu.id = 'menu';
+
+    const title = help.create('h2');
+    title.textContent = 'menu';
+
+    const foods = help.create('div');
+    help.addClass(foods, 'foods');
+
+    for (let categoryName in foodsData) {
+        console.log(categoryName);
+        const category = help.createGeneralCategory(categoryName);
+        for (let subCategoryName in foodsData[categoryName]) {
+            console.log(subCategoryName);
+            const subCategory = help.createProductsCategory(subCategoryName);
+            for (let product of foodsData[categoryName][subCategoryName]) {
+                subCategory.appendChild(
+                    help.createProduct(
+                        product.name,
+                        product.price,
+                        product.description
+                    )
+                );
+            }
+            category.appendChild(subCategory);
+        }
+        foods.appendChild(category);
+    }
+
+
+    help.addChilds(menu, title, foods);
+    return menu;
 }

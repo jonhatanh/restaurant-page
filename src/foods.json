@@ -1,0 +1,53 @@
+{
+    "starters": {
+        "": [
+            {
+                "name": "mandu",
+                "price": 120,
+                "description": "Four beef-stuffed empanadas, noodles and chives  on a bed of mashed sweet potatoes"
+            },
+            {
+                "name": "fried chicken",
+                "price": 130,
+                "description": "Fried chicken glazed in our korean sweet chili sauce"
+            },
+            {
+                "name": "bao buns",
+                "price": 95,
+                "description": "Steamed bread stuffed with pickled cucumber, pork belly and our korean sweet chilli sauce"
+            },
+            {
+                "name": "chili shrimp",
+                "price": 125,
+                "description": "Fried shrimp served with our delicious korean sweet chili sauce"
+            },
+            {
+                "name": "pajeon",
+                "price": 130,
+                "description": "Korean crepe made of  shrimp, squid onion, chives and carrots"
+            }
+        ],
+        "Extras": [
+            {
+                "name": "Octopus",
+                "price": 120
+            },
+            {
+                "name": "Protein",
+                "price": 60
+            },
+            {
+                "name": "Kimchi",
+                "price": 30
+            },
+            {
+                "name": "Egg",
+                "price": 20
+            },
+            {
+                "name": "Rice",
+                "price": 20
+            }
+        ]
+    }
+}
