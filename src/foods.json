@@ -49,5 +49,204 @@
                 "price": 20
             }
         ]
+    },
+    "specialties": {
+        "ramyeon": [
+            {
+                "description": "Homemade wheat pasta in a chili broth and vegetables. Proteins to choose from:"
+            },
+            {
+                "name": "Shrimp",
+                "price": 225
+            },
+            {
+                "name": "Chicken Miso",
+                "price": 230
+            },
+            {
+                "name": "Pork Kimchi",
+                "price": 210
+            },
+            {
+                "name": "Tofu Miso",
+                "price": 205
+            },
+            {
+                "name": "Tofu Kimchi",
+                "price": 205
+            }
+        ],
+        "bibim ramen": [
+            {
+                "description": "Homemade wheat chili pasta sautéed with vegetables and gochujang sauce"
+            },
+            {
+                "name": "Shrimp",
+                "price": 230
+            },
+            {
+                "name": "Beef",
+                "price": 220
+            },
+            {
+                "name": "Chicken",
+                "price": 220
+            },
+            {
+                "name": "Yeyuk",
+                "price": 220
+            },
+            {
+                "name": "Bacon",
+                "price": 210
+            },
+            {
+                "name": "Tofu",
+                "price": 210
+            },
+            {
+                "name": "Octopus",
+                "price": 280
+            }
+        ],
+        "": [
+            {
+                "name": "bibimbap salmon",
+                "price": 280,
+                "description": "Rice with salad, algae ,roe fish and fresh salmon served with soy sauce, korean chilli flakes and wasabi in a stone bowl"
+            },
+            {
+                "name": "bibimbap",
+                "price": 220,
+                "description": "Rice and vegetables, beef, egg cooked at low temperature, with gochujang sauce and served in a stone bowl. We recommend mixing all the ingredients"
+            },
+            {
+                "name": "BULGOGI PASTA",
+                "price": 220,
+                "description": "Sliced beef marinated in soy sauce and served with potato starch noodles, mushrooms onion and rice on the side"
+            },
+            {
+                "name": "TOFU KIMCHI YEYUK",
+                "price": 220,
+                "description": "Pork marinated in Korean chili paste Sautéed with onion, tofu and kimchi Served with rice and lettuce to prepare the traditional SSAM wraps"
+            },
+            {
+                "name": "BIBIM TOCINO",
+                "price": 220,
+                "description": "Rice with sliced pork meat marinated with korean chili paste, sautéed with chives and cheese au gratin served in a stone bowl"
+            }
+        ]
+    },
+    "beverages": {
+        "drinks": [
+            {
+                "name": "Lemonade w/ Maracuya (450 ml)",
+                "price": 60
+            },
+            {
+                "name": "Lemonade w/ Raspberry (450 ml)",
+                "price": 230
+            },
+            {
+                "name": "Lemonade w/ Ginger (450 ml)",
+                "price": 55
+            },
+            {
+                "name": "Lemonade w/ Matcha (450 ml)",
+                "price": 55
+            },
+            {
+                "name": "Grape Juice (238 ml)",
+                "price": 60
+            }
+        ],
+        "hot drinks": [
+            {
+                "name": "Ginger (300 ml)",
+                "price": 60
+            },
+            {
+                "name": "Ginseng with honey (300 ml)",
+                "price": 230
+            },
+            {
+                "name": "Green Tea with brown rice (300 ml)",
+                "price": 55
+            }
+        ],
+        "coffee": [
+            {
+                "name": "Espresso (50 ml)",
+                "price": 50
+            },
+            {
+                "name": "American (110 ml)",
+                "price": 50
+            },
+            {
+                "name": "Affogato (100 ml)",
+                "price": 85
+            },
+            {
+                "name": "Capuccino (110 ml)",
+                "price": 80
+            },
+            {
+                "name": "Latte (110 ml)",
+                "price": 80
+            }
+        ],
+        "others": [
+            {
+                "name": "Mango Juice (354 ml)",
+                "price": 50
+            },
+            {
+                "name": "Coke/Diet Coke (330 ml)",
+                "price": 55
+            },
+            {
+                "name": "Sparkling Water (355 ml)",
+                "price": 45
+            },
+            {
+                "name": "Still Water (355 ml)",
+                "price": 40
+            }
+        ]
+    },
+    "desserts": {
+        "": [
+            {
+                "name": "soft ice cream",
+                "price": 75,
+                "description": "Homemade soft serve ice cream"
+            },
+            {
+                "name": "MATCHA POPSICLE",
+                "price": 75,
+                "description": "Chocolate coated"
+            },
+            {
+                "name": "S'MORE",
+                "price": 75,
+                "description": "Matcha-filled marshmellow"
+            },
+            {
+                "name": "FRIED ICE-CREAM",
+                "price": 115,
+                "description": "Vanilla flavored"
+            },
+            {
+                "name": "LAVA CAKE",
+                "price": 140,
+                "description": "Cake and ice cream"
+            },
+            {
+                "name": "Bingsu",
+                "price": 115,
+                "description": "Shaved ice dessert with sweet toppings, taro flavored"
+            }
+        ]
     }
 }

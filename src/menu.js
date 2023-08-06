@@ -18,6 +18,12 @@ export default function () {
             console.log(subCategoryName);
             const subCategory = help.createProductsCategory(subCategoryName);
             for (let product of foodsData[categoryName][subCategoryName]) {
+                if(product.name === undefined) {
+                    subCategory.appendChild(
+                        help.createProductDescription(product.description)
+                    );
+                    continue;
+                }
                 subCategory.appendChild(
                     help.createProduct(
                         product.name,
