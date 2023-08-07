@@ -48,6 +48,13 @@ header {
     z-index: 1;
     backdrop-filter: blur(4px);
 }
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
 nav {
     ul {
         display: flex;
@@ -62,6 +69,32 @@ nav {
     button {
         padding: 10px 20px;
         width: 100%;
+        color: white;
+        background: none;
+        border: none;
+        transition: 1s all;
+        font-weight: 600;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+            transition: 0.3s ease;
+        }
+
+        &:hover::after {
+            right: 0;
+        }
     }
 }
 
@@ -162,6 +195,22 @@ nav {
 
     &.center {
         text-align: center;
+    }
+
+    button {
+        padding: 5px 10px;
+        background: none;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-bottom: 2px solid white;
+        cursor: pointer;
+        transition: 0.3s all;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.4);
+        }
     }
 }
 .social {
