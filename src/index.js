@@ -28,6 +28,7 @@ addChilds(content, Header, tabs);
 document.getElementById('homeLink').addEventListener('click', changeTab);
 document.getElementById('menuLink').addEventListener('click', changeTab);
 document.getElementById('contactLink').addEventListener('click', changeTab);
+document.getElementById('menuLinkBtn').addEventListener('click', changeTab);
 
 function changeTab(e) {
     const id = e.target.id;
@@ -36,7 +37,7 @@ function changeTab(e) {
         tabs.replaceChildren(createHome());
         content.style.backgroundImage = `url(${homeImage})`;
         content.style.backgroundPosition = `center`;
-    } else if (id === 'menuLink' && currentTab !== 'menu') {
+    } else if ((id === 'menuLink' || id === 'menuLinkBtn') && currentTab !== 'menu') {
         tabs.replaceChildren(createMenu());
         content.style.backgroundImage = `url(${menuImage})`;
         content.style.backgroundPosition = `top right 20%`;
