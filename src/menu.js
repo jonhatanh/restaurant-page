@@ -12,10 +12,8 @@ export default function () {
     help.addClass(foods, 'foods');
 
     for (let categoryName in foodsData) {
-        console.log(categoryName);
         const category = help.createGeneralCategory(categoryName);
         for (let subCategoryName in foodsData[categoryName]) {
-            console.log(subCategoryName);
             const subCategory = help.createProductsCategory(subCategoryName);
             for (let product of foodsData[categoryName][subCategoryName]) {
                 if(product.name === undefined) {

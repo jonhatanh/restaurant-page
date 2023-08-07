@@ -24,10 +24,11 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-image: url(./img/sushi-menu.jpg);
+    background-image: url(./img/ramen.jpg);
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
+    transition: 0.5s all;
 }
 
 header {
