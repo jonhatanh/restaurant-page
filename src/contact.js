@@ -5,7 +5,7 @@ export default function () {
     contact.id = 'contact';
     
     const title = create('h2');
-    title.textContent = 'contact us';
+    title.textContent = 'contact';
     
     const contactContent = create('div');
     addClass(contactContent, 'info');

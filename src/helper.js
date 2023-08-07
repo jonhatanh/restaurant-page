@@ -72,7 +72,7 @@ export function createSocial(iconName, name, data, url = null) {
     const spanName = create('span');
     const spanData = create('span');
     addClass(social, 'social');
-    addClass(icon, 'fa-solid', iconName.includes('facebook') || iconName.includes('instagram') ? 'fa-brands' : '', iconName);
+    addClass(icon, 'fa-solid', iconName.includes('facebook') || iconName.includes('instagram') || iconName.includes('git') ? 'fa-brands' : '', iconName);
     addClass(spanName, 'social-name');
     addClass(spanData, 'social-data');
     spanName.textContent = name;
