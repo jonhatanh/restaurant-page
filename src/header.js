@@ -1,20 +1,20 @@
+import {create, addClass, addChilds} from './helper'
 
-const header = document.createElement('header')
+const header = create('header');
 
-const divLogo = document.createElement('div')
-const icon = document.createElement('i')
-divLogo.classList.add('logo')
-icon.classList.add('fa-solid','fa-bowl-food');
+const divLogo = create('div')
+const icon = create('i')
+addClass(divLogo, 'logo');
+addClass(icon, 'fa-solid','fa-bowl-food');
 
-divLogo.appendChild(icon);
-divLogo.appendChild(document.createTextNode('Pho Restaurant'));
+addChilds(divLogo, icon, document.createTextNode('Pho Restaurant'))
 
-const nav = document.createElement('nav');
-const ul = document.createElement('ul');
+const nav = create('nav');
+const ul = create('ul');
 
 for(let i = 1; i <= 3; i++) {
-    const li = document.createElement('li');
-    const button = document.createElement('button');
+    const li = create('li');
+    const button = create('button');
     if(i === 1) {
         button.textContent = 'Home';
         button.id = 'homeLink';
@@ -30,7 +30,6 @@ for(let i = 1; i <= 3; i++) {
 }
 nav.appendChild(ul);
 
-header.appendChild(divLogo);
-header.appendChild(nav);
+addChilds(header, divLogo, nav);
 
 export default header;

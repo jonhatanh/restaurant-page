@@ -27,10 +27,8 @@ document.getElementById('contactLink').addEventListener('click', changeTab);
 document.getElementById('menuLinkBtn').addEventListener('click', changeTab);
 
 function changeTab(e) {
-    console.log(e);
     const id = e.target.id;
     const currentTab = getCurrentTab();
-    console.log(currentTab);
     if (id === 'homeLink' && currentTab !== 'home') {
         tabs.replaceChildren(createHome());
         content.style.backgroundImage = `url(${homeImage})`;
