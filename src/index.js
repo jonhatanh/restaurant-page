@@ -3,6 +3,7 @@ import "./style.scss";
 import Header from './header';
 import createHome from './home';
 import createMenu from './menu';
+import createContact from './contact';
 import {create, addChilds, addClass} from './helper';
 //img
 import homeImage from './img/ramen.jpg'
@@ -39,8 +40,10 @@ function changeTab(e) {
         tabs.replaceChildren(createMenu());
         content.style.backgroundImage = `url(${menuImage})`;
         content.style.backgroundPosition = `top right 20%`;
-    } else if (currentTab !== 'contact') {
-
+    } else if (id === 'contactLink' && currentTab !== 'contact') {
+        tabs.replaceChildren(createContact());
+        content.style.backgroundImage = `url(${contactImage})`;
+        content.style.backgroundPosition = `center`;
     }
 }
 

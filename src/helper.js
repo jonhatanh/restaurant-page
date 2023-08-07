@@ -5,6 +5,7 @@ export function create(name){
 
 export function addClass(element, ...classes) {
     for(let cssClass of classes) {
+        if(cssClass === '') continue;
         element.classList.add(cssClass);
     }
 }
@@ -63,4 +64,32 @@ export function createProductDescription(desc) {
     description.textContent = desc;
     div.appendChild(description);
     return div;
+}
+
+export function createSocial(iconName, name, data, url = null) {
+    const social = create('div');
+    const icon = create('i');
+    const spanName = create('span');
+    const spanData = create('span');
+    addClass(social, 'social');
+    addClass(icon, 'fa-solid', iconName.includes('facebook') || iconName.includes('instagram') ? 'fa-brands' : '', iconName);
+    addClass(spanName, 'social-name');
+    addClass(spanData, 'social-data');
+    spanName.textContent = name;
+
+    if(url === null) {
+        spanData.textContent = data;
+    } else {
+        const a = create('a');
+        a.href = url;
+        a.textContent = data;
+        spanData.appendChild(a);
+    }
+    addChilds(social, icon, spanName, spanData);
+    return social;
+}
+export function createParagraph(text) {
+    const p = create('p');
+    p.textContent = text;
+    return p;
 }
