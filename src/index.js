@@ -17,11 +17,7 @@ tabs.id = 'tabs';
 addClass(tabs, 'tabs');
 
 
-
-
-// tabs.appendChild(createHome());
 tabs.appendChild(createHome());
-// addChilds(content, Header, tabs);
 addChilds(content, Header, tabs);
 
 
@@ -31,13 +27,16 @@ document.getElementById('contactLink').addEventListener('click', changeTab);
 document.getElementById('menuLinkBtn').addEventListener('click', changeTab);
 
 function changeTab(e) {
+    console.log(e);
     const id = e.target.id;
     const currentTab = getCurrentTab();
+    console.log(currentTab);
     if (id === 'homeLink' && currentTab !== 'home') {
         tabs.replaceChildren(createHome());
         content.style.backgroundImage = `url(${homeImage})`;
         content.style.backgroundPosition = `center`;
-    } else if ((id === 'menuLink' || id === 'menuLinkBtn') && currentTab !== 'menu') {
+        document.getElementById('menuLinkBtn').addEventListener('click', changeTab);
+    } else if ((id === 'menuLink' && currentTab !== 'menu') || id === 'menuLinkBtn') {
         tabs.replaceChildren(createMenu());
         content.style.backgroundImage = `url(${menuImage})`;
         content.style.backgroundPosition = `top right 20%`;

@@ -20,9 +20,6 @@ export default function() {
         createParagraph(`Discover a diverse and mouthwatering menu that celebrates the finest ingredients and culinary traditions. From signature dishes prepared by our skilled chefs to seasonal specials that reflect the essence of each season, our menu is a celebration of culinary craftsmanship.`),
         button
         );
-        
-    
-    
     
     addChilds(home, title, homeContent);
     return home;
