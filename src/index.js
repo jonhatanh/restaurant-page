@@ -6,9 +6,9 @@ import createMenu from './menu';
 import createContact from './contact';
 import {create, addChilds, addClass} from './helper';
 //img
-import homeImage from './img/ramen.jpg'
-import menuImage from './img/sushi-menu.jpg'
-import contactImage from './img/sushi-contact.jpg'
+import homeImage from './img/ramen-min.jpg'
+import menuImage from './img/sushi-menu-min.jpg'
+import contactImage from './img/sushi-contact-min.jpg'
 
 
 const content = document.getElementById('content');
